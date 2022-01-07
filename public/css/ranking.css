@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'myfont';
+    src: url("../font/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf");
+} 
+
+body{
+    margin: 0%;
+    font-family: myfont; 
+    background-color:rgb(255, 255, 255);
+}
+
+/* header */
+
+.header-wrapper{
+    width: 90%;
+    margin: 0 auto 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+}
+
+.site-title{
+    font-size: 40px;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list li{
+     margin-right: 10px;
+}
+
+.nav-list li:last-child{
+    margin-right: 0;
+}
+
+/* main */
+.page-title{
+    text-align: center;
+    font-size: 30px;
+    margin: 70px auto;
+}
+
+.ranking-wrapper{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    /* padding-top: 10px; */
+}
+
+.ranking-list{
+    display: flex;
+    text-align: center;
+}
+
+.ranking-category{
+    width: 34%;
+    border-right: 1px solid gray;
+}
+
+.ranking-category:last-child{
+    border-right: 0px;
+}
+
+.production-type{
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.ranking{
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.ranking-inner{
+    padding: 20px;
+    /* border-top: 1px solid gray; */
+    /* border-bottom: 1px solid gray;  */
+    /* margin: 10px auto 0; */
+}
+
+.ranking-inner:last-child{
+    border-bottom: 0px;
+}
+
+.production-img{
+    height: 200px;
+}
+
+.production-title{
+    font-size: 15px;
+    margin: 20px auto;
+}
+
+/* footer */
+.footer{
+    margin-top: 50px;
+    border-top: 1px solid rgba(128, 128, 128, 0.459);
+    text-align: center;
+    padding: 20px;
+}

@@ -1,0 +1,138 @@
+body{
+    margin: 0%;
+    font-family:serif;
+    letter-spacing: 0.05em;
+    background-color: rgb(243, 240, 234);
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url("../font/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf");
+} 
+
+body{
+    margin: 0%;
+    font-family: myfont; 
+    background-color:rgb(255, 255, 255);
+}
+
+/* header */
+
+.header-wrapper{
+    width: 90%;
+    margin: 0 auto 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+}
+
+.site-title{
+    font-size: 40px;
+    font-family: serif;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list li{
+     margin-right: 10px;
+}
+
+.nav-list li:last-child{
+    margin-right: 0;
+}
+
+/* main */
+
+
+
+.user-info{
+    width: 70%;
+    margin: 100px auto 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+.section-title{
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.username-kana{
+    font-size: 15px;
+    letter-spacing: 0.1em;
+}
+
+.number-list{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.list-item{
+    font-size: 25px;
+}
+
+.number{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.review-list-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review-list{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    /* justify-content:space-around; */
+}
+
+.review-list li{
+    width: 30%;
+    margin: 10px 5% 10px 0 ; 
+    padding: 20px;
+    border: 1px solid gray;
+    background-color: rgb(255, 255, 255);
+}
+
+.review-list li:nth-child(3n){
+    margin-right:0 ;
+}
+
+.production-title{
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-bottom:10px ;
+    border-bottom: 1px solid gray;
+}
+
+.star-list{
+    margin-bottom: 15px;
+}
+
+.review{
+    text-align: start;
+
+}
+
+/* footer */
+.footer{
+    margin-top: 50px;
+    border-top:1px solid rgba(128, 128, 128, 0.459);
+    text-align: center;
+    padding: 20px;
+}
