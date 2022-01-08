@@ -24,9 +24,9 @@
                     <li>
                         <a href="/register_work">作品を登録する</a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="/register_review">レビューを投稿する</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a>ログアウトする</a>
                     </li>
