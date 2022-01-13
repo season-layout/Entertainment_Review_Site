@@ -32,12 +32,12 @@
                             <a href="/register_review">レビューを投稿する</a>
                         </li> -->
                         <li>
-                            <a class="dropdown-item" href=url('/logout') 
+                            <a class="dropdown-item" href="url('/login')" 
                             onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                                 ログアウトする
                             </a>
-                            <form id="logout-form" action=url('/logout') method="POST" class="d-none">
+                            <form id="logout-form" action="url('/login')" method="POST" class="d-none">
                                 @csrf     
                             </form>
                         </li>
