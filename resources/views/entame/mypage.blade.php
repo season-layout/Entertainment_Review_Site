@@ -30,18 +30,10 @@
                             <a href="">レビューを投稿する</a>
                         </li> -->
                         <li>
-                            <!-- <a class="dropdown-item" href="http://127.0.0.1:8000/logout" 
-                            onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();">
-                                ログアウトする
-                            </a>
-                            <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
-                                @csrf     
-                            </form> -->
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">
-                                Logout
+                                ログアウトする
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
