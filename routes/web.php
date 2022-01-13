@@ -51,3 +51,4 @@ Route::match(['get', 'post'], '/register_review1', [App\Http\Controllers\ReviewC
 
 // Route::post('/register_review1', [App\Http\Controllers\ReviewController::class, 'move'])->name('review.move');
 Route::post('/register_review2', [App\Http\Controllers\ReviewController::class, 'store'])->name('review.store');
+Route::get('/logout', 'Auth\LoginController@logout');
