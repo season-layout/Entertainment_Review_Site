@@ -38,7 +38,7 @@
                             <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
                                 @csrf     
                             </form> -->
-                            <a href="/logout">ログアウトする</a>
+                            <a href="{{ route('login.loggedOut')}}">ログアウトする</a>
                         </li>
                     </ul>
                 </nav>
