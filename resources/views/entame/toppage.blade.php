@@ -54,8 +54,11 @@
                     <div class="top-review-item">
                         <div class="production-detail">
                             <div class="top-review-img-wrapper">
+                                @if(empty($work->work_image))
                                     <img src="{{ asset('img/no-image.jpg') }}" alt="作品画像">
-                                    <!-- <img src="{{ Storage::url($work->work_image) }}"> -->
+                                @else
+                                    <img src="{{ Storage::url($work->work_image) }}">
+                                @endif
                             </div>
                             <div class="top-review-text">
                                 <h3 class="work-title">
