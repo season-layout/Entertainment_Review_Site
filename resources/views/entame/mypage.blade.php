@@ -46,7 +46,9 @@
                                     </a>
 
                                     <form id="logout-form" action="https://test-entertainment-review-site.herokuapp.com/logout" method="POST" class="d-none">
-                                        <input type="hidden" name="_token" value="vPhFUKuR7uJy7koQRprYidJhk8p6LUFJXRZZK4AG">                                    </form>
+                                        @csrf
+                                        <input type="hidden" name="_token" value="vPhFUKuR7uJy7koQRprYidJhk8p6LUFJXRZZK4AG">
+                                    </form>
                                 </div>
                         </li>
                     </ul>
