@@ -38,18 +38,15 @@
                             <form id="logout-form" action="http://127.0.0.1:8000/logout" method="POST" class="d-none">
                                 @csrf     
                             </form> -->
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="https://test-entertainment-review-site.herokuapp.com/logout"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
 
-                                    <form id="logout-form" action="https://test-entertainment-review-site.herokuapp.com/logout" method="POST" class="d-none">
-                                        @csrf
-                                        <input type="hidden" name="_token" value="vPhFUKuR7uJy7koQRprYidJhk8p6LUFJXRZZK4AG">
-                                    </form>
-                                </div>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                         </li>
                     </ul>
                 </nav>
